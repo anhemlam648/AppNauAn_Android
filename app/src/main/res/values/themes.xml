@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Appnauan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--Primary brand color. -->
+         <item name="colorPrimary">@color/Lime</item>
+         <item name="colorPrimaryVariant">@color/purple</item>
+         <item name="colorOnPrimary">@color/LavenderBlush</item>
+        <!--Secondary brand color. -->
+         <item name="colorSecondary">@color/BlueViolet</item>
+        <item name="colorSecondaryVariant">@color/Yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!--Status bar color. -->
+        <item name="android:statusBarColor">@color/SpringGreen</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+    <style name="Theme.Appnauan" parent="Base.Theme.Appnauan" />
+</resources>

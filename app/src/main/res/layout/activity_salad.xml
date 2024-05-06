@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Hình ảnh của salad -->
+    <ImageView
+        android:id="@+id/imageRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/salad" />
+
+    <!-- Tiêu đề của công thức -->
+    <TextView
+        android:id="@+id/textRecipeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageRecipe"
+        android:layout_marginTop="16dp"
+        android:text="Tên Công Thức"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Nguyên liệu -->
+    <TextView
+        android:id="@+id/textIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRecipeTitle"
+        android:layout_marginTop="8dp"
+        android:text="Nguyên liệu:\n- Rau diếp\n- Cà chua\n- Dưa leo\n- Dầu giấm\n- Muối\n- Tiêu"
+        android:textSize="16sp" />
+
+    <!-- Cách làm -->
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIngredients"
+        android:layout_marginTop="8dp"
+        android:text="Cách làm:\n1. Rửa sạch rau diếp, cà chua, dưa leo và hành tây.\n2. Cắt nhỏ rau diếp, cà chua, dưa leo và hành tây.\n3. Cắt đậu hủ thành từng miếng nhỏ.\n4. Nấu chín óc chó.\n5. Pha dầu giấm, muối, và tiêu thành nước sốt và rót lên trên salad.\n6. Trộn đều và thưởng thức!"
+        android:textSize="16sp" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="0"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        android:id="@+id/btnDeleteRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_delete_24"
+        android:text="Xóa"
+        android:onClick="onDeleteButtonClick"/>
+    <ImageButton
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteRecipe"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_share_24"
+        android:text="Share"
+        />
+</RelativeLayout>

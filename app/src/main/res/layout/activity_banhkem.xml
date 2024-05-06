@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Hình ảnh bánh bông lan cupcake -->
+    <ImageView
+        android:id="@+id/imageRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banhbonglancupcake" />
+
+    <!-- Tiêu đề công thức -->
+    <TextView
+        android:id="@+id/textRecipeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageRecipe"
+        android:layout_marginTop="16dp"
+        android:text="Bánh Bông Lan Cupcake"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Nguyên liệu -->
+    <TextView
+        android:id="@+id/textIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRecipeTitle"
+        android:layout_marginTop="8dp"
+        android:text="Nguyên liệu:\n- 200g bột mỳ\n- 100g đường\n- 3 quả trứng\n- 100ml sữa tươi\n- 50g bơ\n- 1 muỗng cà phê vani"
+        android:textSize="16sp" />
+
+    <!-- Cách làm -->
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIngredients"
+        android:layout_marginTop="8dp"
+        android:text="Cách làm:\n1. Trộn đều bột mỳ, đường, trứng, sữa tươi, bơ và vani.\n2. Đổ hỗn hợp vào khuôn bánh.\n3. Nướng trong lò ở nhiệt độ 180 độ C cho đến khi bánh chín và có màu vàng nhạt.\n4. Trang trí bánh với kem và hoa quả theo ý thích.\n5. Thưởng thức bánh bông lan cupcake ngon tại nhà!"
+        android:textSize="16sp" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="0"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        android:id="@+id/btnDeleteRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_delete_24"
+        android:text="Xóa"
+        android:onClick="onDeleteButtonClick"/>
+    <ImageButton
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteRecipe"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_share_24"
+        android:text="Share"
+        />
+</RelativeLayout>

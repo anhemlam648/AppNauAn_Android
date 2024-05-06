@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Hình ảnh pizza -->
+    <ImageView
+        android:id="@+id/imageRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pizza" />
+
+    <!-- Tiêu đề công thức -->
+    <TextView
+        android:id="@+id/textRecipeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageRecipe"
+        android:layout_marginTop="16dp"
+        android:text="Pizza"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Nguyên liệu -->
+    <TextView
+        android:id="@+id/textIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRecipeTitle"
+        android:layout_marginTop="8dp"
+        android:text="Nguyên liệu:\n- Bột pizza\n- Sốt cà chua\n- Phô mai\n- Thịt xay, rau sống, gia vị theo khẩu vị"
+        android:textSize="16sp" />
+
+    <!-- Cách làm -->
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textIngredients"
+        android:layout_marginTop="8dp"
+        android:text="Cách làm:\n1. Chuẩn bị bột pizza và nhân theo công thức.\n2. Trải bột pizza ra khay nướng.\n3. Phủ một lớp sốt cà chua lên bột.\n4. Rải đều phô mai và thêm các nguyên liệu khác theo khẩu vị.\n5. Nướng trong lò ở nhiệt độ xác định cho đến khi pizza chín và phồng.\n6. Thưởng thức pizza ngon tại nhà!"
+        android:textSize="16sp" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="8dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="0"
+        android:layout_centerHorizontal="true"/>
+    <ImageButton
+        android:id="@+id/btnDeleteRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInstructions"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_delete_24"
+        android:text="Xóa"
+        android:onClick="onDeleteButtonClick"/>
+    <ImageButton
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteRecipe"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_share_24"
+        android:text="Share"
+      />
+
+
+</RelativeLayout>

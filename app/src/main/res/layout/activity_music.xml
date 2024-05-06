@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="414dp"
+        android:layout_height="497dp"
+        android:src="@drawable/hinh_dep"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+    <Button
+        android:id="@+id/btnplay"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:backgroundTint="#00FFFF"/>
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="233dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="@+id/btnplay"
+        app:layout_constraintStart_toStartOf="@+id/btnplay"
+        app:layout_constraintTop_toBottomOf="@+id/btnplay"
+        android:backgroundTint="#FF0000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
